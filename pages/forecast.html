@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-md-12 app-box">
+    <h2>Forecast for {{name}}</h2>
+    <hr>
+    Days: <a  href="#/forecast/2" ng-class="days === '2' ? 'bg-primary' : ''">2</a> | <a href="#/forecast/5" ng-class="days === '5' ? 'bg-primary' : ''">5</a> | <a href="#/forecast/7" ng-class="days === '7' ? 'bg-primary' : ''">7</a>
+    <hr>
+    <div class="row" ng-repeat="w in weatherResult.list">
+      <div class="col-md-12">
+          <forecast-panel weather-day="w" date-format="d MMMM y" convert-to-standard="toCelsius(tempDay)" convert-to-date="convertToDate(dt)"></forecast-panel>
+      </div>
+    </div>
+  </div>
+</div>

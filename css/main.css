@@ -1,0 +1,10 @@
+.header {
+  height: 80px;
+  background-color: #ddd;
+  text-align: center;
+}
+
+.app-box {
+  margin-top: 100px;
+  text-align: center;
+}
